@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				creative: ['Caveat', 'cursive'],
+				sans: ['Open Sans', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +65,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				creative: {
+					coral: '#FF6B6B',
+					teal: '#4ECDC4',
+					blue: '#45B7D1',
+					mint: '#96CEB4',
+					yellow: '#FECA57',
+					lavender: '#A8E6CF',
+					peach: '#FFD93D',
+					purple: '#6C5CE7'
 				}
 			},
 			borderRadius: {
