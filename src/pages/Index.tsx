@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
 
 const Index = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>("");
+  const [selectedCategory, setSelectedCategory] = useState<string>("sets");
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>("");
 
   const categories = [
@@ -157,7 +157,7 @@ const Index = () => {
         </section>
 
         {/* Products */}
-        {selectedCategory && (selectedCategory !== "clothing" || selectedSubcategory) && (
+        {(selectedCategory !== "clothing" || selectedSubcategory) && (
           <section className="mb-12">
             <h2 className="font-creative text-4xl text-creative-blue text-center mb-8">
               Товары категории
