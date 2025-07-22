@@ -118,9 +118,10 @@ const Index = () => {
                   <Button
                     key={category.id}
                     variant={selectedCategory === category.id ? "default" : "outline"}
-                    className={`h-16 font-semibold text-sm transition-all duration-300 ${
+                    size="sm"
+                    className={`font-medium transition-all duration-200 ${
                       selectedCategory === category.id 
-                        ? "bg-creative-coral hover:bg-creative-coral/80 text-white border-creative-coral shadow-lg scale-105" 
+                        ? "bg-creative-coral hover:bg-creative-coral/80 text-white border-creative-coral" 
                         : "border-creative-teal text-creative-teal hover:bg-creative-teal/10"
                     }`}
                     onClick={() => {
