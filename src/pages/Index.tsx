@@ -82,8 +82,8 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: 'url(/img/fb2d2c70-95d2-4983-896c-b09d4b88dfea.jpg)',
-            backgroundPosition: '70% center'
+            backgroundImage: 'url(/img/021a2b30-671b-4ad3-aff9-e81e10a34e7c.jpg)',
+            backgroundPosition: 'center center'
           }}
         >
           <div className="absolute inset-0 bg-white/60"></div>
