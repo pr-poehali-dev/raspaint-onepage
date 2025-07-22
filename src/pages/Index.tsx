@@ -78,22 +78,27 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-creative-peach/20 via-creative-lavender/20 to-creative-blue/20">
       {/* Header */}
-      <header className="bg-white shadow-lg border-b-4 border-creative-coral">
-        <div className="container mx-auto px-4 py-6">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-            <div className="text-center lg:text-left">
-              <h1 className="font-creative text-5xl lg:text-6xl text-creative-coral font-bold mb-2">
-                Раскрась себя! 🎨
-              </h1>
-              <p className="text-gray-600 text-lg">Творчество без границ</p>
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-creative-yellow">
-              <img 
-                src="/img/fb2d2c70-95d2-4983-896c-b09d4b88dfea.jpg" 
-                alt="Девочка красит футболку" 
-                className="w-64 h-64 object-cover"
-              />
-            </div>
+      <header className="relative bg-white shadow-lg border-b-4 border-creative-coral overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ 
+            backgroundImage: 'url(/img/fb2d2c70-95d2-4983-896c-b09d4b88dfea.jpg)',
+            backgroundPosition: '70% center'
+          }}
+        >
+          <div className="absolute inset-0 bg-white/60"></div>
+        </div>
+        <div className="relative container mx-auto px-4 py-16 lg:py-24">
+          <div className="max-w-2xl">
+            <h1 className="font-creative text-5xl lg:text-7xl text-creative-coral font-bold mb-4 drop-shadow-lg">
+              Раскрась себя! 🎨
+            </h1>
+            <p className="text-gray-800 text-xl lg:text-2xl font-semibold drop-shadow-sm">
+              Творчество без границ
+            </p>
+            <p className="text-gray-700 text-lg mt-4 max-w-lg">
+              Создавайте уникальные вещи своими руками с нашими качественными товарами для творчества
+            </p>
           </div>
         </div>
       </header>
